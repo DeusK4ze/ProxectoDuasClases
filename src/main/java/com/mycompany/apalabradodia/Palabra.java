@@ -27,7 +27,7 @@ public class Palabra {
         }
     }
 
-    // 
+    // creo que enseña el array pero no lo tengo muy claro
     private void amosarArray() {
         for (int i = 0; i < palabraOculta.length(); i++) {
             System.out.print(letras.get(i));
@@ -36,7 +36,7 @@ public class Palabra {
         System.out.print("\n");
     }
 
-    // 
+    // puede funcionar
     private void pedirPalabra() {
         boolean error = true;
         while (error) {
@@ -51,11 +51,7 @@ public class Palabra {
         }
     }
 
-    //
-    // la palabra que teniamos si es asi si la intercambia en el array
-    // en la misma posicion y si la palabra que teniamos contiene alguna letra
-    // de la palabra introducida nos dice cual es la lera que no corresponde
-    // en esa posicion acto seguido resta un intento
+    //hace cosas
     private void comprobarPalabra(String palabra) {
         for (int i = 0; i < palabraOculta.length(); i++) {
             if (palabraOculta.charAt(i) == palabra.charAt(i)) {
@@ -67,8 +63,7 @@ public class Palabra {
         erros--;
     }
 
-    // comprueba que el array esta completo con palabras o en caso de que
-    // se acabasen los intentos, devuelve si el juego continua o si ha acabado
+    //comprueba
     private boolean finDejuego() {
         if (palabraOculta.equals(palabra)) {
             System.out.print("O conseguiches");
