@@ -81,9 +81,7 @@ public class Palabra {
 
     }
 
-    // muestra las intrucciones del juego, llama al metodo llenarlista
-    // y llama a los metodos mostrarlista y pedirpalabra hasta que el
-    // metodo fin devuelva que el juego ha acabado
+    // aqui juegas
     public void xogar() {
         System.out.println("\nTes que adiviñar unha palabra de " + palabraOculta.length() + " caracteres escribindo palabras co mesmo numero de letras, tes " + erros + " intentos. ¿Lo conseguiras?");
         crearArray();
